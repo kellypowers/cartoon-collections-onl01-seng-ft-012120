@@ -7,10 +7,7 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  i = 0 
-  while i < array.length do 
-    array.include?(array[i].length > 4)
-    i += 1 
+    array.any?{|i| i.length > 4}
   end
 end
 
